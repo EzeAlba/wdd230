@@ -1,96 +1,113 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
+
 body.active {
-    background: #0b0b0b;
-}
-header{
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  background: #0b0b0b;
 }
 
-.navigation{
-    background-color: whitesmoke;
+header {
+  background-color: #01295F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.navigation li{
-    display: inline-block;
+.navigation {
+  background-color: #CFDEE7;
 }
 
-.navigation li a{
-    font-size: 2em;
-    padding: 2.3em;
-    text-decoration: none;  
-}
-h1{
-    font-size: 2rem;
+
+.navigation li {
+  display: inline-block;
 }
 
-h1{
-    color: #415541;
-    text-align: center;
-    font-family: 'roboto', serif;
+.navigation li a {
+  font-size: 1.2em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-decoration: none;
 }
-.parent{
-margin: 1rem 2vw;
+
+nav a:hover {
+  color: #CFDEE7;
+  background-color: #01295F;
 }
+
+h1 {
+  font-size: 2rem;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'roboto', serif;
+}
+
+#title {
+  color: #01295F;
+  text-align: center;
+  font-family: 'roboto', serif;
+}
+
+.parent {
+  margin: 1rem 2vw;
+}
+
 .card {
-    border: 1px solid #415541;
-    background-color: #c9f5e9;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-  }
-  
-  .card h2 {
-    background-color: #415541;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-    font-size: 2em;
-  }
-  .card p{
-    font-size: 2em;
-    text-align: center;
-    font-family: 'roboto', serif;
-    font-weight: bold; 
-  }
+  border: 1px solid #01295F;
+  background-color: #CFDEE7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
 
-  .card ul{
-    padding: 10px;
-  }
+.card h2 {
+  background-color: #FFB30F;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: .75rem 0;
+  font-size: 2em;
+}
 
-  #visit-counter{
-    padding: 10px;
-  }
+.card p {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'roboto', serif;
+  font-weight: bold;
+}
 
+.card ul {
+  padding: 10px;
+}
 
-  footer{
-    background: #A3A2DF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 10px; 
-
-  }
-  footer p{
-    color: white;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-  }
+#visit-counter {
+  padding: 10px;
+}
 
 
+footer {
+  background: #437F97;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 
+}
 
-  
-  
+footer p {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
