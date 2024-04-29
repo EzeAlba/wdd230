@@ -8,25 +8,25 @@
 
 :root {
 
-  --primary-color: #8e518d;
-  --secondary-color: #c86fc9;
-  --accent1-color: #f7c7db;
-  --accent2-color: #d7c0d0;
+  --primary-color: #000022;
+  --secondary-color: #0094C6;
+  --accent1-color: #005E7C;
+  --accent2-color: #001242;
 
 
   --heading-font: 'Averia Serif Libre';
   --paragraph-font: 'roboto', sans-serif;
 
 
-  --headline-color-on-white: #ac03a6;
-  --headline-color-on-color: #C9DAEA;
-  --paragraph-color-on-white: #00B295;
-  --paragraph-color-on-color: #C9DAEA;
-  --paragraph-background-color: #05b6f6;
-  --nav-link-color: #b20071;
-  --nav-background-color: #C9DAEA;
-  --nav-hover-link-color: #C9DAEA;
-  --nav-hover-background-color: #00B295;
+  --headline-color-on-white: #000022;
+  --headline-color-on-color: #001242;
+  --paragraph-color-on-white: #005E7C;
+  --paragraph-color-on-color: #001242;
+  --paragraph-background-color: #0094C6;
+  --nav-link-color: #000022;
+  --nav-background-color: #0094C6;
+  --nav-hover-link-color: #acdbeb;
+  --nav-hover-background-color: #000022;
 }
 
 
@@ -98,6 +98,7 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: aliceblue;
 }
 
 .secondary {
@@ -110,6 +111,7 @@ p {
 
 .accent2 {
   background-color: var(--accent2-color);
+  color: aliceblue;
 }
 
 p.colored {
@@ -127,7 +129,6 @@ nav {
 nav {
   list-style-type: none;
   display: flex;
-
 }
 
 nav a {
@@ -135,7 +136,6 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-
 }
 
 nav a:link,
@@ -146,18 +146,6 @@ nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-}
-
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
 }
 
 .wire {
