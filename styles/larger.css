@@ -1,0 +1,33 @@
+@media only screen and (min-width: 45rem){
+
+    .parent{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .card{
+        box-shadow: 1px 1px 10px black ;
+    }
+
+    .navigation {
+        display: none;
+      }
+      .navigation li a {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: inline-block;
+      }
+      .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+}
