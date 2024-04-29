@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Bree+Serif&family=Ubuntu&display=swap');
+
+:root {
+
+  --primary-color: #8e518d;
+  --secondary-color: #c86fc9;
+  --accent1-color: #f7c7db;
+  --accent2-color: #d7c0d0;
+
+
+  --heading-font: 'Averia Serif Libre';
+  --paragraph-font: 'roboto', sans-serif;
+
+
+  --headline-color-on-white: #ac03a6;
+  --headline-color-on-color: #C9DAEA;
+  --paragraph-color-on-white: #00B295;
+  --paragraph-color-on-color: #C9DAEA;
+  --paragraph-background-color: #05b6f6;
+  --nav-link-color: #b20071;
+  --nav-background-color: #C9DAEA;
+  --nav-hover-link-color: #C9DAEA;
+  --nav-hover-background-color: #00B295;
+}
+
+
+
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  font-family: var(--heading-font);
+  text-decoration: underline;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+
+}
+
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+
+.wire {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+  font-size: 1.5rem;
+}
