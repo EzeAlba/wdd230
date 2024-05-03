@@ -5,6 +5,8 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const body = document.querySelector("body");
@@ -15,6 +17,7 @@ const nav = document.querySelector(".navigation");
 const ul = document.querySelector("ul");
 const card1 = document.querySelector("#card1");
 
+
 modeButton.addEventListener("click", () => {
 	body.classList.toggle('dark-mode');
 	main.classList.toggle('dark-mode');
@@ -24,6 +27,7 @@ modeButton.addEventListener("click", () => {
 	ul.classList.toggle('dark-mode');
 	card.classList.toggle('dark-mode');
 	card1.classList.toggle('dark-mode');
+
 
 	if (modeButton.textContent.includes("🕶️")) {
 		main.style.background = "#000";
