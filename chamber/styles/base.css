@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+    
+  header {
+    background-color: #001242;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .navigation {
+    background-color: #000022;
+    display: flex;
+      flex-direction: column;
+      list-style: none;
+  }
+  
+  
+  .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: whitesmoke;
+  }
+
+  
+  #hero-img{
+    width: 100%;
+}
+
+  p{
+    padding-left: 10px;
+}
+
+#mission{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    background-color: #0094C6;
+    color: #CFDEE7;
+    width: 45%;
+}
+  /* when the button is clicked - the open class is toggled (added/removed) */
+  .open a {
+      display: block;
+  }
+  
+  nav a:hover {
+    color: black;
+    background-color: whitesmoke;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'roboto', serif;
+  }
+  
+  .parent {
+    margin: 1rem 2vw;
+  }
+  
+  .card {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  
+  #visit-counter {
+    padding: 10px;
+  }
+  
+  
+  footer {
+    background: #0094C6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  
+  }
+  
+  footer p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #menu {
+      font-size: 2rem;
+      border: 0;
+      background: none;
+      color: #000;
+    left: 1rem;
+    
+  }
+  
+  #menu::before {
+      content: "☰";
+    color: #01295F;
+  }
+  
+  #menu.open::before {
+      content: "❎";
+  }
+  
+  #mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee; 
+  }
+  
