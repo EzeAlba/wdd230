@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive Images</title>
+</head>
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-small.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="San Diego, California Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> &copy; Ezequiel Albarracin - WDD 230 BYU-Idaho Project</p>
+        <p id="lastModified">Last Time Modified: </p>
+    </footer>
+</body>
+<script src="scripts/lazyload-script.js"></script>
+</html>
