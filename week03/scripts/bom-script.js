@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
             setChapterList(); 
             input.value = '';
             input.focus();
+        }else {
+            alert('Please enter a Book and Chapter.');
+            input.focus();
         }
     });
 
