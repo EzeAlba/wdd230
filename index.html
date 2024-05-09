@@ -24,7 +24,9 @@
     </div>
     <header>
      <div >
-        <img src="images/eze.png.jpg" alt="Ezequiel Albarracin Profile" width="100" height="110">
+        <picture class = "profile">
+            <img id= "profile" src="images/eze.webp" alt="Ezequiel Albarracin Profile" width="100" height="110" loading="lazy">
+        </picture>
         <h1>Ezequiel Albarracin</h1>
      </div>
         
@@ -42,6 +44,16 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/san_diego_california_temple_mobile.webp" media="(max-width: 400px)">
+                <source srcset="images/san_diego_california_temple_night_large.webp" media="(max-width: 960px)">
+                <img src="images/san_diego_california_temple_original.webp" alt="San Diego, California Temple" width="1263" height="750" loading="lazy">
+            </picture>
+            <span>San Diego, California Temple</span>
+        </div>
+
+
         <h2 id="title">
             WDD 230: Web Frontend Development
         </h2>
@@ -59,19 +71,18 @@
             </section>
             <section id = "card1" class="card">
                 <h2>Information</h2>
-                <div>
-                    <p>Currently weather:</p><span id="weather"></span>
+                <div id="weather">
+                    <p>Currently weather:</p>
                     <figure>
-                        <img id="img-icon" src="#" alt="img icon">
+                        <div id="ww_35c275fd2e8ff" v='1.3' loc='id' a='{"t":"horizontal","lang":"es","sl_lpl":1,"ids":["wl3696"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}' width="100%">Más previsiones: <a href="https://oneweather.org/buenos_aires/30_days/" id="ww_35c275fd2e8ff_u" target="_blank">Weather forecast Buenos Aires 30 days</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_35c275fd2e8ff"></script>
                         <figcaption id="description"></figcaption>
                     </figure>
                 </div>
-                <div id="visit-counter">You are the Visit: <span id="visit-count">0</span></div>
+                <div id="visit-counter">Number of Visits: <span id="visit-count">0</span></div>
             </section>
         </div>
     </main>
-
-    <footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6110229930255!2d-57.57828392474416!3d-37.98620604391208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94765bcf2cb%3A0x29d7e0c740f9a8c3!2sRivadavia%205372%2C%20B7604BTH%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715206956487!5m2!1ses-419!2sar" width=90% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    <footer>
         <p><span id="currentYear"></span> &copy; Ezequiel Albarracin, Argentina Bs. As. Mar del plata </p>
         <p id="lastModified"></p>
     </footer>

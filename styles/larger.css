@@ -10,6 +10,10 @@
     box-shadow: 1px 1px 10px black;
   }
 
+  #profile{
+    box-shadow: 10px 10px 10px #000;
+  }
+
   .navigation {
     display: flex;
     background-color: #CFDEE7;
@@ -27,13 +31,16 @@
     padding-bottom: 0%;
     text-decoration: none;
   }
+
   nav a:hover {
     color: #CFDEE7;
     background-color: #01295F;
   }
+
   #menu {
-		display: none; /* hide hamburger button */
-	}
+    display: none;
+    /* hide hamburger button */
+  }
 
   #mode {
     position: absolute;
@@ -47,6 +54,37 @@
   .dark-mode {
     background-color: #000;
     color: #fff;
-    border-color: #eee; 
+    border-color: #eee;
   }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero picture {
+    width: 100%;
+  }
+
+  .hero span {
+    color: black;
+    font-family: 'roboto', serif;
+    background-color: rgb(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+
 }

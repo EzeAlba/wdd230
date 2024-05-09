@@ -16,6 +16,7 @@ const card = document.querySelector(".card");
 const nav = document.querySelector(".navigation");
 const ul = document.querySelector("ul");
 const card1 = document.querySelector("#card1");
+const visit = document.querySelector("#visit-counter");
 
 
 modeButton.addEventListener("click", () => {
@@ -27,6 +28,7 @@ modeButton.addEventListener("click", () => {
 	ul.classList.toggle('dark-mode');
 	card.classList.toggle('dark-mode');
 	card1.classList.toggle('dark-mode');
+	visit.classList.toggle('dark-mode');
 
 
 	if (modeButton.textContent.includes("🕶️")) {
@@ -39,3 +41,13 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+const visitsDisplay = document.querySelector("#visit-count");
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+numVisits++;
+localStorage.setItem("numVisits-ls", numVisits);
