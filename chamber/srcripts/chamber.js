@@ -62,25 +62,37 @@ if (numVisits !== 0) {
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
-document.addEventListener('DOMContentLoaded', function() {
-    const sidebarMessage = document.getElementById('sidebar-message');
-    const lastVisit = localStorage.getItem('lastVisit');
+document.addEventListener("DOMContentLoaded", function () {
+	let messageElement = document.getElementById("message");
 
-    if (!lastVisit) {
-        sidebarMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const millisecondsPerDay = 24 * 60 * 60 * 1000; // Number of milliseconds in a day
-        const currentDate = new Date();
-        const daysSinceLastVisit = Math.floor((currentDate - new Date(lastVisit)) / millisecondsPerDay);
+	// Get the current date
+	let currentDate = new Date();
+	let currentTimestamp = currentDate.getTime();
 
-        if (daysSinceLastVisit < 1) {
-            sidebarMessage.textContent = "Back so soon! Awesome!";
-        } else {
-            const plural = daysSinceLastVisit === 1 ? '' : 's';
-            sidebarMessage.textContent = `You last visited ${daysSinceLastVisit} day${plural} ago.`;
-        }
-    }
+	// Get the last visit date from localStorage
+	let lastVisitTimestamp = localStorage.getItem("lastVisitTimestamp");
 
-    // Update lastVisit in localStorage
-    localStorage.setItem('lastVisit', new Date().toISOString());
+	if (!lastVisitTimestamp) {
+		// First visit
+		messageElement.textContent = "Welcome! Let us know if you have any questions.";
+	} else {
+		// Calculate the time difference in milliseconds
+		let timeDifference = currentTimestamp - lastVisitTimestamp;
+		let oneDayInMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+		if (timeDifference < oneDayInMilliseconds) {
+			// Less than a day since the last visit
+			messageElement.textContent = "Back so soon! Awesome!";
+		} else {
+			// Calculate the number of days between visits
+			let daysDifference = Math.floor(timeDifference / oneDayInMilliseconds);
+			let dayString = daysDifference === 1 ? "day" : "days";
+
+			// Display the appropriate message
+			messageElement.textContent = "You last visited " + daysDifference + " " + dayString + " ago.";
+		}
+	}
+
+	// Store the current visit timestamp in localStorage
+	localStorage.setItem("lastVisitTimestamp", currentTimestamp);
 });
