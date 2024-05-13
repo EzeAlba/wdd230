@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Discover Site</title>
+    <meta name="author" content="Ezequiel Albarracin">
+    <meta name="description" content="This is the index page of the WDD 230 - Web Frontend Development in BYU Idaho.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="mdp-favicon.ico" >
+    <meta property="og:title" content="Chamber Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezealba.github.io/wdd230/">
+    <meta property="og:image" content="https://www.infoviajera.com/wp-content/uploads/2022/11/Mar-del-Plata-desde-el-aire-2.jpg">
+    <meta property="og:description" content="Official Website for the WDD230 BYU-Idaho Course">
+</head>
+
+<body>
+    <div id="mode">
+        🕶️
+    </div>
+    <header>
+        <div >
+           <h1>Chamber of Commerce Mar del Plata</h1>
+        </div>
+        <nav>
+           <ul class="navigation">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </nav> 
+       </header>
+    <button id="menu"></button>
+
+    <div class="container-discover">
+        <aside class="sidebar">
+         <div id="sidebar-message"></div>
+          <ul class="special-attractions">
+            <li >ESPECIAL ATTRACTIONS
+            <ul class="subgroup">
+                <li> Sea Wolf</li>
+                <li>Beach</li>
+                <li>Our Cathedral</li>
+            </ul></li>
+            <li>FEATURED ACTIVITIES
+            <ul class="subgroup">
+                <li>Camping</li>
+                <li>Beach Soccer</li>
+                <li>Guided Visits</li>
+            </ul></li>
+          </ul>
+          <h2>Calendary</h2>
+            <div class="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?src=5279478a6640df9a6f2ed2eed8acc4c4413c7da59e6a99265cc9ab9d03c6ef6a%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="300"></iframe>
+            </div>
+        </aside>
+        <main class="content">
+            <h1 class="title">Visit Our City!!!</h1>
+            <h2 id="message"></h2>
+            
+        <div class="gallery">
+          <figure>
+            <picture>
+                <source media="(max-width:500px)" srcset="images/Catedral-de-Mar-del-Plata-small.webp">
+                <source media="(max-width:1000px)" srcset="images/Catedral-de-Mar-del-Plata-medium.webp">
+                <img src="images/Catedral-de-Mar-del-Plata.webp" alt="table-setting" loading="lazy" width="1500" height="750">
+            </picture>
+            <figcaption>
+                <span class="caption">Mar Del plata, The Happiness City</span>
+                <div class="overlay"></div>
+            </figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source media="(max-width:500px )" srcset="images/Hotel_Provincial_y_Casino-Small.webp">
+                <source media="(max-width:1000px )" srcset="images/Hotel_Provincial_y_Casino-medium.webp">
+                <img src="images/Hotel_Provincial_y_Casino.webp" alt="table-setting" loading="lazy" width="1500" height="750">                
+              </picture>
+              <figcaption>
+                <span class="caption">Mar del plata and the coast</span>
+                <div class="overlay"></div> 
+              </figcaption>                   
+          </figure>
+          <figure>
+            <picture>
+                <source media="(max-width:500px )" srcset="images/playa-small.webp">
+                <source media="(max-width:1000px )" srcset="images/playa-medium.webp">
+                <img src="images/playa.webp" alt="table-setting" loading="lazy" width="1500" height="750"> 
+              </picture>
+              <figcaption>
+                <div class="overlay"></div>
+                <span class="caption">Our beautiful beach</span>
+              </figcaption>             
+          </figure>
+          <figure>
+            <picture>
+                <source media="(max-width:500px )" srcset="images/torreon-del-monje-Small.webp">
+                <source media="(max-width:1000px )" srcset="images/torreon-del-monje-medium.webp">
+                <img src="images/torreon-del-monje.webp" alt="table-setting" loading="lazy" width="1500" height="750">
+              </picture>
+              <figcaption>
+                <div class="overlay"></div>
+                <span class="caption">Our Monuments</span>
+              </figcaption>             
+          </figure>
+          <figure>
+            <picture>
+                <source media="(max-width:500px)" srcset="images/mar-del-plata-Small.webp">
+                <source media="(max-width:1000px)" srcset="images/mar-del-plata-medium.webp">
+                <img src="images/mar-del-plata.webp" alt="table-setting" loading="lazy" width="1500" height="750">
+              </picture>
+              <figcaption>
+                <div class="overlay"></div>
+                <span class="caption">Mar del Plata over the air</span>
+              </figcaption>              
+          </figure>
+          <figure>
+            <picture>
+                <source media="(max-width:500px)" srcset="images/mar-mar-del-plata-Small.webp">
+                <source media="(max-width:1000px)" srcset="images/mar-mar-del-plata-medium.webp">
+                <img src="images/mar-mar-del-plata.webp" alt="table-setting" loading="lazy" width="1500" height="750">
+              </picture>
+              <figcaption>
+                <div class="overlay"></div>
+                <span class="caption">Our Cathedral</span>
+              </figcaption>             
+          </figure>                
+        </div>
+      </main>
+    </div>
+
+    
+    <footer>
+        <p><span id="currentYear"></span> &copy; Ezequiel Albarracin, Argentina Bs. As. Mar del Plata </p>
+        <p id="lastModified">Last time Modified: </p>
+    </footer>
+    <script src="srcripts/chamber.js"></script>
+</body>
+
+</html>

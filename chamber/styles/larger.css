@@ -79,4 +79,17 @@
       color: #fff;
       border-color: #eee; 
     }
+
+    .caption {
+      color: black;
+      font-family: 'roboto', serif;
+      background-color: rgb(255, 255, 255, 0.5);
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 3rem;
+    }
   }
