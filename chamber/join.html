@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Mar del plata</title>
+    <meta name="author" content="Ezequiel Albarracin">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="mdp-favicon.ico">
+    <meta name="author" content="Ezequiel Albarracin">
+    <meta name="description" content="This is the Chamber of Commerce Site - Web Frontend Development in BYU Idaho.">
+    <meta property="og:title" content="WDD 230 BYU Idaho Course - Chamber of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezealba.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://www.infoviajera.com/wp-content/uploads/2022/11/Mar-del-Plata-desde-el-aire-2.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">   
+</head>
+
+
+
+<body>
+    <div id="mode">
+        🕶️
+    </div>
+    <header>
+     <div >
+        <h1>Chamber of Commerce Mar del Plata</h1>
+     </div>
+     <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> 
+    </header>
+
+    <button id="menu"></button>
+
+    <main class="main-grid">
+        <form id="form" action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Join Aplication</legend>
+                <label class="top">First Name*<input type="text" name="fname" required id="first-name"></label>
+                <label class="top">Last Name*<input type="text" name="fname" required id="last-name"></label>
+                <label class="top">Title or Position*<input type="text" name="title" required id="title" pattern="[a-zA-Z -]{7,}"></label>
+                <label class="top">Email* <input type="email" name="email"required title="Please enter a valid email" placeholder="example@gmail.com"></label>
+                <label class="top">Mobile Phone Number*<input type="tel" name ="phone" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required ></label>
+                <label class="top">Business/Organization's name <input type="text" name="business" id="business" required></label>
+                <label class="description">Short Business Description <textarea name="description" id="description" cols="30" rows="5"></textarea></label>
+                <label class="timestamp">Timestamp<input type="hidden" name="timestamp" id="timestamp" ></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose membership</legend>
+                <label class="top">Nivel de Membresía:</label>
+                <div class="membershipLevel">
+                    <select id="membershipLevel" name="membershipLevel" required>
+                        <option value="NP">NP Membership (No fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </div>
+                <label class="top" id="error" style="display: none; color: red;"></label>
+            </fieldset>
+
+            
+
+            <input class="submitBtn"type="submit" value="Submit">
+        </form>
+
+        <fieldset>
+            <legend>Entry Membership</legend>
+            <div class="columns-benefits">
+                <h2>NP Membership</h2>
+                <p>No fee</p>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Special events</li>
+                    <li>Training</li>
+                    <li>Advertising</li>
+                    <li>Event discounts</li>
+                </ul>
+                <hr>
+                <h2>Bronze Membership</h2>
+                <p>Cost: $50/month</p>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Special events</li>
+                    <li>Training</li>
+                    <li>Advertising</li>
+                    <li>Event discounts</li>
+                </ul>
+            </div>    
+        </fieldset>
+        <fieldset>
+            <legend>High Membership</legend>
+            <div class="columns-benefits">
+                <h2>Silver Membership</h2>
+                <p>Cost: $150/month</p>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Special events</li>
+                    <li>Training</li>
+                    <li>Advertising</li>
+                    <li>Event discounts</li>
+                </ul>
+                <hr>
+                <h2>Gold Membership</h2>
+                <p>Cost: $250/month</p>
+                <p>Benefits:</p>
+                <ul class="dropdown-list">
+                    <li>
+                        <span class="dropdown-toggle">Special events</span>
+                        <ul class="dropdown-content">
+                            <li>Camping</li>
+                            <li>Party with special Guest</li>
+                            <li>Anual Dinner</li>
+                            <li>Casino Free</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="dropdown-toggle">Training</span>
+                        <ul class="dropdown-content">
+                            <li>Pool</li>
+                            <li>Own Gym</li>
+                            <li>Free tenis</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="dropdown-toggle">Advertising</span>
+                        <ul class="dropdown-content">
+                            <li>Details about advertising</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="dropdown-toggle">Event discounts</span>
+                        <ul class="dropdown-content">
+                            <li>Soccer Game</li>
+                            <li>Recital</li>
+                            <li>Copa Davis</li>
+                            <li>Nba Games</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </fieldset>
+    </main>
+
+
+    <footer>
+        <p><span id="currentYear"></span> &copy; Ezequiel Albarracin - WDD 230 BYU-Idaho Project</p>
+        <p id="lastModified">Last Time Modified: </p>
+    </footer>
+    <script src="srcripts/chamber.js"></script>
+</body>
+
+</html>
