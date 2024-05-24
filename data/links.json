@@ -1,0 +1,102 @@
+{
+    "weeks":[
+        {
+            "week": "Week 1",
+            "links":[
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Holygrail"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links":[
+                {
+                    "url":"https://codepen.io/EzeAlba/pen/bGJyRxy?editors=0010",
+                    "title":"Code Pen"
+                },
+                {
+                    "url":"week02/bom.html",
+                    "title":"Book of Mormon App"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links":[
+                {
+                    "url":"week03/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title":"Lazy Load Demonstration"
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title":"Responsive Image"
+                },
+                {
+                    "url":"week03/bom.html",
+                    "title":"BOM With Local Storage"
+                },
+                {
+                    "url":"chamber/discover.html",
+                    "title":"Discover Chamber"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links":[
+                {
+                    "url":"https://codepen.io/EzeAlba/pen/qBGdErB?editors=0100",
+                    "title":"Pseudo-Class CodePen"
+                },
+                {
+                    "url":"images/excercise-screenshot.png",
+                    "title":"Excercise Screenshot"
+                },
+                {
+                    "url":"week04/tablebuild.html",
+                    "title":"Table-Build"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links":[
+                {
+                    "url":"https://codepen.io/EzeAlba/pen/XWwdyXJ?editors=1100",
+                    "title":"Pseudo-Element CodePen"
+                },
+                {
+                    "url":"week05/new-ward-members.json",
+                    "title":"JSON File"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"Prophets-Grid"
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"Weather API"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links":[
+                {
+                    "url":"",
+                    "title":""
+                },
+                {
+                    "url":"",
+                    "title":""
+                }
+            ]
+        }
+    ]
+}
