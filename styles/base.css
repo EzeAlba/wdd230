@@ -40,15 +40,15 @@ header {
 margin-left: 5%;
 padding: 5%;
 }
-ul{
+.links{
   list-style: none;
 }
-li{
+.links li{
   padding: 5px;
   border-style:solid;
 
 }
-li::before{
+.links li::before{
   content: "💼";
 }
 strong{
@@ -56,7 +56,7 @@ strong{
   font-size: large;
   
 }
-a:hover{
+.links a:hover{
   background-color: #01295F;
   color: #CFDEE7;
   padding: 3px;
