@@ -36,6 +36,32 @@ header {
 	text-decoration: none;
 }
 
+#links-list{
+margin-left: 5%;
+padding: 5%;
+}
+ul{
+  list-style: none;
+}
+li{
+  padding: 5px;
+  border-style:solid;
+
+}
+li::before{
+  content: "💼";
+}
+strong{
+  font-weight: bold;
+  font-size: large;
+  
+}
+a:hover{
+  background-color: #01295F;
+  color: #CFDEE7;
+  padding: 3px;
+  border-radius: 5px ;
+}
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
