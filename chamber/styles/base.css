@@ -522,7 +522,10 @@ hr{
 
 
 /*directory file*/
-
+.grid{
+  display: flex;
+  justify-content: center;
+}
 #directory-h1{
 
     color: black;
@@ -531,6 +534,7 @@ hr{
 }
 
 #cards {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
@@ -601,6 +605,10 @@ a:hover{
 }
 
 /*add class list*/
+.list{
+  display: flex;
+  justify-content: center;
+}
 .list #cards {
   display: flex; /* Cambiar a display flex para que los elementos se muestren en una columna */
   flex-direction: column; /* Establecer la dirección de la columna */
@@ -608,7 +616,7 @@ a:hover{
 
 .list section {
 	margin: 0;
-	padding: 0.25rem;
+	padding: 20px;
 }
 
 .list section > * {
@@ -623,10 +631,11 @@ a:hover{
 	font-size: 1rem;
 	font-family: Roboto, Helvetica, sans-serif;
   color: white;
+  padding: 5px;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: black;
 }
 
 
