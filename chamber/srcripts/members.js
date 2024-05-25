@@ -1,4 +1,4 @@
-const linksURL = "https://ezealba.github.io/wdd230/chamber/data/member.json"
+const linksURL = "https://ezealba.github.io/wdd230/chamber/data/members.json"
 const cards = document.querySelector('#cards');
 
 async function getMembers(){
