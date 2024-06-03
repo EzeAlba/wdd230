@@ -67,6 +67,7 @@
     color: #CFDEE7;
     width: 45%;
 }
+
   /* when the button is clicked - the open class is toggled (added/removed) */
   .open a {
       display: block;
@@ -96,6 +97,17 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b1d50; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 10px 10px 25px black;  
+  }
+
+  .card h2{
+    color: white;
   }
   
   #visit-counter {
@@ -389,6 +401,18 @@ label {
     cursor: pointer;
 }
 
+#weather-icon{
+  width: 100px;
+}
+
+#description{
+  color: white;
+}
+
+#weather{
+  display: flex;
+}
+
 
 
 
@@ -540,16 +564,6 @@ hr{
   gap: 20px; 
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0b1d50; 
-  padding: 20px; 
-  border-radius: 8px; 
-  box-shadow: 10px 10px 25px black;
-  
-}
 .card img{
     width: 100%; 
     height: auto; 
