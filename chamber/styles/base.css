@@ -130,7 +130,7 @@
     font-family: 'Roboto', sans-serif;
   }
   
-  #menu {
+  .menu {
       font-size: 2rem;
       border: 0;
       background: none;
@@ -139,16 +139,16 @@
     
   }
   
-  #menu::before {
+  .menu::before {
       content: "☰";
     color: #01295F;
   }
   
-  #menu.open::before {
+  .menu.open::before {
       content: "❎";
   }
   
-  #mode {
+  .mode {
     position: absolute;
     top: 1rem;
     right: 1rem;

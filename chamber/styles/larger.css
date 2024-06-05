@@ -61,7 +61,7 @@
       color: black;
       background-color: whitesmoke;
     }
-    #menu {
+    .menu {
           display: none; /* hide hamburger button */
       }
   
