@@ -49,7 +49,7 @@
                 <label class="top">First Name*<input type="text" name="fname" required id="first-name"></label>
                 <label class="top">Last Name*<input type="text" name="fname" required id="last-name"></label>
                 <label class="top">Title or Position*<input type="text" name="title" required id="title" pattern="[a-zA-Z -]{7,}"></label>
-                <label class="top">Email* <input type="email" name="email"required title="Please enter a valid email" placeholder="example@gmail.com"></label>
+                <label class="top">Email* <input type="email" name="email" required title="Please enter a valid email" placeholder="example@gmail.com"></label>
                 <label class="top">Mobile Phone Number*<input type="tel" name ="phone" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required ></label>
                 <label class="top">Business/Organization's name <input type="text" name="business" id="business" required></label>
                 <label class="description">Short Business Description <textarea name="description" id="description" cols="30" rows="5"></textarea></label>
@@ -61,10 +61,10 @@
                 <label class="top">Nivel de Membresía:</label>
                 <div class="membershipLevel">
                     <select id="membershipLevel" name="membershipLevel" required>
-                        <option value="NP">NP Membership (No fee)</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Silver">Silver Membership</option>
-                        <option value="Gold">Gold Membership</option>
+                        <option value="">NP Membership (No fee)</option>
+                        <option value="">Bronze Membership</option>
+                        <option value="">Silver Membership</option>
+                        <option value="">Gold Membership</option>
                     </select>
                 </div>
                 <label class="top" id="error" style="display: none; color: red;"></label>
@@ -72,7 +72,7 @@
 
             
 
-            <input class="submitBtn"type="submit" value="Submit">
+            <input class="submitBtn" type="submit" value="Submit">
         </form>
 
         <fieldset>
